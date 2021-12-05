@@ -1,0 +1,84 @@
+
+/*générale*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+body{
+    font-size: 16px;
+    font-family: "Merriweather", serif;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*header*/
+.topbar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-image: url(assets/img/background-header.png);
+    background-size: contain;  
+
+}
+
+/*logo*/
+
+.name{
+    width: 100%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    padding: 20px;
+    color: #2F2F2F;
+}
+
+/*navigation*/
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    background-color:#303030;
+    color: #9A9A9A;
+ 
+}
+
+.item-menu{
+    
+    
+    width: 20%;
+    padding:  20px;
+    color: #9A9A9A;
+    position:relative;
+    
+}
+
+.item-menu a{
+
+    color: #9A9A9A;
+}
+
+
+.active.item-menu a{
+    color: #FFFFFF;
+    font-weight: 900;
+}
+
+.active.item-menu::after{
+    content: url(assets/img/triangle.png);
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 80%;
+}
+
