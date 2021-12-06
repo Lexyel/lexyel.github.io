@@ -39,3 +39,15 @@ retour.addEventListener('click', desactiveClasse)
 
 /*Changement item CV*/
 
+
+const itemsCV = document.querySelectorAll('.item-cv')
+
+itemsCV.forEach(itemCV=> {
+    itemCV.addEventListener('click', function(){
+
+        for(i = 0; i < itemsCV.length; i++) {
+            itemsCV[i].classList.remove('active');
+        }
+        this.classList.add('active');
+    })
+})
