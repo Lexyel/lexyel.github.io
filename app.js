@@ -11,3 +11,31 @@ items.forEach(item=> {
         this.classList.add('active');
     })
 })
+
+
+
+/*changement a propos */
+const button= document.querySelector('.buttonCV');
+const me= document.querySelector('.me');
+const retour = document.querySelector('.retour');
+const cV= document.querySelector('.cv');
+const presentation= document.querySelector('.presentation')
+
+function activeClasse(){
+    me.classList.add('active');
+    cV.classList.remove('desactive');
+    presentation.classList.add('desactive');
+}
+
+button.addEventListener('click', activeClasse);
+
+function desactiveClasse(){
+    me.classList.remove('active')
+    presentation.classList.remove('desactive');
+    cV.classList.add('desactive');
+}
+
+retour.addEventListener('click', desactiveClasse)
+
+/*Changement item CV*/
+

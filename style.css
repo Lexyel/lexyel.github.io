@@ -10,6 +10,7 @@
 body{
     font-size: 16px;
     font-family: "Merriweather", serif;
+    color: #2F2F2F;
     
 }
 
@@ -36,7 +37,7 @@ a{
     font-family: 'Dancing Script', cursive;
     font-size: 1.5rem;
     padding: 20px;
-    color: #2F2F2F;
+    
 }
 
 /*navigation*/
@@ -67,7 +68,10 @@ nav{
     color: #9A9A9A;
 }
 
+.item-menu a:hover{
 
+    color: #27FD92;
+}
 .active.item-menu a{
     color: #FFFFFF;
     font-weight: 900;
@@ -82,3 +86,223 @@ nav{
     top: 80%;
 }
 
+.separation{
+    height: 13px;
+    background-color: #27FD92;
+    
+}
+
+.banniere img{
+    width: 100%;
+    
+    opacity: 0;
+    
+}
+
+.banniere{
+    background-image: url(assets/img/banniereheader.png);
+    background-size: cover;
+    height: 240px;
+    position: relative;
+}
+
+
+
+
+.banniere-text{
+    position: absolute;
+    width: 450px;
+    right:100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.banniere-text:after{ 
+    content: ""; 
+    width: 3px; 
+    height: 1rem; 
+    display: inline-block;      
+    background: #303030;
+    animation: clignote 0.7s infinite linear;
+   }    
+
+@keyframes clignote {
+from{ 
+      opacity: 0; 
+    }      
+to{ 
+      opacity: 1;
+     }    
+}
+.apropos{
+    position: relative;
+}
+
+.apropos-contenu{
+    display: flex;
+    width: 80%;
+    margin-top: 70px;
+    background-color: #303030;
+    color: #9A9A9A;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2{
+    color: #27FD92;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+
+.cv{
+    width: 50%;
+}
+
+.presentation{
+    width: 50%;
+    text-align: center;
+}
+
+.contenu-cv{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    height: 380px;
+    
+}
+
+.presentation p{
+    
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+
+.item-cv.active {
+    border-left:3px solid #27FD92;
+    
+}
+
+.item-cv.active h3{
+    color: #27FD92;
+}
+
+.item-cv h3{
+    cursor: pointer;
+}
+.item-cv{
+    display: flex;
+    align-items: baseline;
+    justify-content: stretch;
+    border-left:3px solid #9A9A9A;
+    padding-left: 5px;
+    padding-bottom: 5px;
+
+}
+
+.skills{
+    margin-left: 30px;
+    display: none;
+}
+
+.skills.active{
+    display: block;
+}
+
+
+
+.me{
+    width: 400px;
+    text-align: center;
+    position: absolute;
+    background-color: #E0E0E0;
+    margin: 20px;
+    padding: 20px 50px;
+    left: 200px;
+    height: 530px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.me.active{
+    transform: translateX(450px);
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+
+
+.me img{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 150px;
+    border: 3px solid #27FD92;
+    border-radius: 50%;
+    
+}
+
+.me p:first-of-type{
+    margin-bottom: 50px;
+}
+
+.cercles{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+.cercle {
+    border-radius: 50%;
+    width: 10px;
+    background-color: #2F2F2F;
+    height: 10px;
+    margin: 10px;
+
+}
+
+.cercle1{
+    background-color: #c4c4c4;
+}
+
+.cercle2{
+    background-color: #9a9a9a;
+}
+
+.cercle3{
+    background-color: #2f2f2f;
+}
+
+.apropos-contenu button{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #27FD92;
+    width: 240px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.retour{
+    color: #27FD92;
+    cursor: pointer;
+}
+
+.nav-apropos{
+    display: flex;
+    justify-content: space-around;
+   bottom: 0;
+   align-items: center;
+   margin-top: auto;
+}
+
+.desactive{
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
